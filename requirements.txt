@@ -6,3 +6,6 @@ apscheduler
 pydantic
 nicegui   # 프론트까지 같이 쓰려면
 httpx     # 프론트가 API 호출할 때 필요
+streamlit>=1.36
+pandas
+requests

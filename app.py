@@ -288,6 +288,11 @@ COPY . .
 ENV PORT=8080
 CMD ["python", "app.py"]
 
+if __name__ == "__main__":
+    PORT = int(os.getenv('PORT', '8080'))
+    ui.run(host='0.0.0.0', port=PORT)
+
+
 # =============================
 # .env.example
 # =============================

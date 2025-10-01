@@ -1,0 +1,8 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+sqlmodel
+apscheduler
+pydantic
+nicegui   # 프론트까지 같이 쓰려면
+httpx     # 프론트가 API 호출할 때 필요

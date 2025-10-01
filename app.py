@@ -261,7 +261,8 @@ with ui.footer().classes('justify-between'):
     ui.link('API 문서(백엔드)', BACKEND_URL + '/docs', new_tab=True)
 
 # 앱 실행
-ui.run(host='0.0.0.0', port=PORT, title='Logistics Submaterials Frontend')
+PORT = int(os.getenv('PORT', '8080'))
+ui.run(host='0.0.0.0', port=PORT)
 
 # =============================
 # requirements.txt
